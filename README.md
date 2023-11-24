@@ -15,6 +15,7 @@ Descripción del proyecto.
 
 - Node.js
 - npm
+- Docker
 
 ## 🛠️ Instalación
 
@@ -26,6 +27,9 @@ Sigue estos pasos para instalar el proyecto en tu entorno local:
 	cd Reto-T-cnico-Node
 3. **Instala Dependencias**
     npm install
+4. **Ejecutar Docker Compose para la instancia de redis**
+    docker-compose up
+
     
 ## 🧪 Ejecución de las pruebas
 #### Para ejecutar las pruebas, usa el siguiente comando:
