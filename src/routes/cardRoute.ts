@@ -5,7 +5,7 @@ import { validateCreateCard } from "../validators/card";
 
 const router = Router();
 
-router.post("/", validateCreateCard, CardController.createCard);
+router.post("/", checkToken, validateCreateCard, CardController.createCard);
 router.post("/getCard", checkToken, CardController.getCard);
 
 export { router };
