@@ -46,7 +46,7 @@ npm  run  build
 ## 🚀 Ejecución del proyecto
 
 #### Para ejecutar el proyecto, usa el siguiente comando:
-npm  start
+npm run start
 ####  Esto iniciará el servidor en tu entorno local.
 
 
