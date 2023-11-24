@@ -5,12 +5,10 @@ import { handleHttp401, handleHttp404, handleHttp500 } from "../utils/error.hand
 class CardController {
   async createCard({ body }: Request, res: Response){
     try {
-      //console.log("body", body);
       const responseCard = await CardService.createCard(body);
       //console.log("responseCard", responseCard);
       res.send(responseCard);
     } catch (e) {
-      //console.log("Een el catch");
       if (e instanceof Error) {
         handleHttp500(res, e.message);
       }
@@ -21,7 +19,6 @@ class CardController {
     try {
       const token = body.token;
       console.log("body controller",body);
-      //console.log("response",res);
       const responseCard = await CardService.getCard(token);
       const data = responseCard ? responseCard : handleHttp404(res, "CARD NOT FOUND");
       res.send(data)
